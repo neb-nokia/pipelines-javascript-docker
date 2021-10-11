@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nebnokiapipelinesjavascriptdocker 
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: nebnokiapipelinesjavascriptdocker
@@ -16,4 +16,4 @@ spec:
         - name: nebnokiapipelinesjavascriptdocker 
           image: scpdemo.azurecr.io/nebnokiapipelinesjavascriptdocker
           ports:
-          - containerPort: 8080
+          - containerPort: 8088
