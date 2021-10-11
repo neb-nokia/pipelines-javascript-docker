@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nebnokiapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nebnokiapipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: nebnokiapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: nebnokiapipelinesjavascriptdocker 
+          image: scpdemo.azurecr.io/nebnokiapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
