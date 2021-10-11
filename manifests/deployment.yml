@@ -16,4 +16,4 @@ spec:
         - name: nebnokiapipelinesjavascriptdocker 
           image: scpdemo.azurecr.io/nebnokiapipelinesjavascriptdocker
           ports:
-          - containerPort: 8080
+          - containerPort: 8088
